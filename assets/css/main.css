@@ -1,5 +1,6 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
+/*@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");*/
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 
 /*
 	Photon by HTML5 UP
@@ -8,13 +9,15 @@
 */
 
 /* Reset */
+   *{font-family: 'Hanna', serif;} /*왜 적용 안되나*/
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font: inherit;
+		/*font: inherit;*/
+		font-family: 'Hanna',serif;
 		vertical-align: baseline;
 	}
 
@@ -1808,7 +1811,8 @@
 
 	body, input, select, textarea {
 		color: #666;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		/*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
+		font-family: 'Hanna',serif; /*왜 안적용*/
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.65em;
@@ -1903,6 +1907,7 @@
 
 		hr.major {
 			margin: 3em 0;
+	
 		}
 
 	blockquote {
@@ -1924,7 +1929,8 @@
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		/*font-family: "Courier New", monospace;*/
+		font-family: 'Hanna';
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
 	}
@@ -1982,6 +1988,7 @@
 
 	header.major {
 		margin: 0 0 1em 0;
+		font-weight: bolder;  /*왜 적용 안되나*/
 	}
 
 		header.major:after {
@@ -2242,7 +2249,7 @@
 		}
 
 		.icon.style1:before {
-			color: #c3e895;
+			color: #F0FFF0;
 		}
 
 		.icon.style2:before {
@@ -2267,7 +2274,7 @@
 
 		.icon.major {
 			text-decoration: none;
-			color: #555;
+			color: #555;  /*왜 색깔 안바껴??? */
 			cursor: default;
 			display: inline-block;
 			margin: 0 0 1.5em 0;
@@ -2710,8 +2717,8 @@
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			background-image: url("../../images/header.jpg");
-			background-size: auto,							cover;
+			background-image: url("../../images/jungle2.jpg");
+			background-size: 							cover;
 		}
 
 			.main.style2 a {
